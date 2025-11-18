@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercício 1</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 20px;
+      }
+
+      table {
+        border-collapse: collapse;
+        border: 2px solid #333;
+        margin-top: 5px;
+      }
+
+      th,
+      td {
+        border: 1px solid #666;
+        padding: 5px;
+        text-align: left;
+      }
+
+      caption {
+        text-align: left;
+        font-weight: normal;
+        padding-bottom: 5px;
+        font-size: 1.1em;
+      }
+
+      #tabela-coluna th {
+        text-align: center;
+      }
+
+      #tabela-linha td[rowspan="2"] {
+        vertical-align: middle;
+      }
+
+      #tabela-legenda th {
+        text-align: center;
+      }
+      #tabela-legenda .moeda {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tabelas</h1>
+
+    <h2>Célula com 2 colunas:</h2>
+    <table id="tabela-coluna">
+      <tr>
+        <th>Nome</th>
+        <th colspan="2">Telefone</th>
+      </tr>
+      <tr>
+        <td>José das Colves</td>
+        <td>(22) 2728-6677</td>
+        <td>(22) 2728-7766</td>
+      </tr>
+    </table>
+
+    <h2>Célula com 2 linhas:</h2>
+    <table id="tabela-linha">
+      <tr>
+        <td>Nome:</td>
+        <td>José das Colves</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Telefone:</td>
+        <td>(22) 2728-6677</td>
+      </tr>
+      <tr>
+        <td>(22) 2728-7766</td>
+      </tr>
+    </table>
+
+    <h2>Tabela com Legenda</h2>
+    <table id="tabela-legenda">
+      <caption>
+        Total de despesas por mês
+      </caption>
+      <tr>
+        <th>Mês</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>Janeiro</td>
+        <td class="moeda">R$ 1.500,00</td>
+      </tr>
+      <tr>
+        <td>Fevereiro</td>
+        <td class="moeda">R$ 1.470,00</td>
+      </tr>
+    </table>
+  </body>
+</html>
