@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: gray;
+  color: white;
+  padding: 5px;
+}
+
+footer p {
+  background-color: gray;
+  color: white;
+  padding: 5px;
+  clear: both;
+}
+
+nav {
+  float: left;
+}
+
+section {
+  padding: 20px;
+  margin-left: 200px;
+  border-left: 2px solid black;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 5px;
+}
+
+nav ul li a {
+  margin-bottom: 5px;
+  display: block;
+  background-color: gray;
+  color: black;
+  padding: 20px;
+  padding-right: 65px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  display: block;
+  background-color: white;
+  color: red;
+  padding: 20px;
+  padding-right: 70px;
+  border: 1px solid gray;
+  text-decoration: none;
+}
